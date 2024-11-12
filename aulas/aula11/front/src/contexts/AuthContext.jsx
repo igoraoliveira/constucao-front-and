@@ -11,9 +11,14 @@ function AuthProvider(props) {
 
   const login = (dados) => {
     if (dados.email === "igor@iesb.br" && dados.senha === "abcd1234") {
-      setUsuario({ email: dados.email, logado: true, token: "1a2b3c4d" });
-    }
-  };
+      setUsuario({ email: dados.email,
+         logado: true,
+         token: "1a2b3c4d" });
+         return "";
+        } else {
+          return "Login invalido";
+        }
+      };
 
   const logout = () => {
     setUsuario({ email: null, logado: false, token: null });
@@ -27,7 +32,8 @@ function AuthProvider(props) {
     });
   };
 
-  const context = { usuario, login, logout, registrar };
+  const context = { usuario,
+     login, logout, registrar };
 
   return (
     <AuthContext.Provider value={context}>
