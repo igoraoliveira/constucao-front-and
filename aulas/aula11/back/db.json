@@ -1,3 +1,9 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "igor3108almeida@gmail.com",
+      "password": "$2a$10$GM4LYjNNMbOEP.a5XpTz/OTjNFnDXvzeFfoUkW2PDXgh8dhPiTzUC",
+      "id": 1
+    }
+  ]
 }

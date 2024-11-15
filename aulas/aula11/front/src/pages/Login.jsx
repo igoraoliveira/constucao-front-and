@@ -11,8 +11,8 @@ function Login() {
   
   const { login } = useContext(AuthContext);
 
-  const onEntrar = (data) => {
-    const erro = login(data);
+  const onEntrar = async (data) => {
+    const erro = await login(data);
     if (!erro) {
       setMsg("");
     navigate("/home");
